@@ -1,0 +1,836 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+
+}
+.mainnav{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding-left: 30px;
+    border-bottom:2px solid #ddd;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.nav h2{
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.navbutton a{
+    font-size: 1.5vw;
+    padding-right: 60px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+ 
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    
+}
+.navbutton i{
+    display: none;
+}
+.social a{
+    text-decoration: none;
+    font-size: 30px;
+    padding-right: 20px;
+}
+.social i{
+    color: rgb(0, 0, 0);
+}
+
+.social a:hover{
+    padding: 5px 5px;
+    border: 1px dotted black;
+    background-color: #ffffff;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.body1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.profile-image{
+    height: 40vh;
+    width: 20%;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+.body1 .aboutus{
+    padding: 10%;
+}
+.aboutus{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body1{
+    border-bottom: 2px solid #ddd;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.body1 .aboutus p{
+    padding-bottom: 25px;
+}
+.aboutus a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border: 2px solid white;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 13px 30px;
+}
+
+.navbutton a:hover{
+    background: rgb(0, 0, 0);
+    transition: 1s;
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+}
+
+.aboutus a:hover{
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(238, 255, 5);
+    transition: 1s;
+    color: black;
+    
+}
+
+.experience{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    position: absolute;
+}
+.experience h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 60px;
+    padding-top: 4%;
+}
+
+.experience .allbox{
+    justify-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.allbox .box1{
+    height: 33vh;
+    width: 15vw;
+    background-color: #000000;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+.allbox .box1 i{
+    color: white;
+    font-size: 40px;
+    padding-left: 40%;
+
+}
+.allbox .box1 h3{
+    text-align: center;
+    color: white;
+}
+.allbox .box1 p{
+    text-align: center;
+    color: white;
+}
+.vedio h1{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    color: white;
+}
+.vedio{
+    margin-top: 20vh;
+    height: 80vh;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 40px;
+
+}
+.vedio .allbox2{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding-bottom: 60px;
+
+}
+.vedio .allbox2 .box6{
+    height: 34vh;
+    width: 16vw;
+    background-color: #000000;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+.vedio .allbox2 .box6 iframe{
+    height: 35vh;
+    width: 17vw;
+    border-radius: 20px;
+}
+
+.vedio .box7{
+    height: 34vh;
+    width: 16vw;
+    background-color: #000000;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+.vedio .allbox2 .box7 iframe{
+    height: 35vh;
+    width: 17vw;
+    border-radius: 20px;
+}
+.vedio .box8{
+    height: 34vh;
+    width: 16vw;
+    background-color: #000000;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+.vedio .allbox2 .box8 video{
+    height: 35vh;
+    width: 17vw;
+    border-radius: 20px;
+}
+
+.vedio .box9{
+    height: 34vh;
+    width: 16vw;
+    background-color: #000000;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+.vedio .allbox2 .box9 iframe{
+    height: 34vh;
+    width: 16vw;
+    border-radius: 20px;
+    justify-items: right;
+}
+.explore-class{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.explore-class h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: rgb(0, 0, 0);
+}
+.explore-class .allbox3{
+    justify-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+.allbox3 .box10{
+    height: 60vh;
+    width: 30%;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    background-image: url(images/images.jpg);
+    background-position: right;
+    background-size: cover;
+    position: relative;
+    justify-items: center;
+    justify-content: space-evenly;
+    display: flex;
+
+}
+
+.allbox3 .box10 p{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    padding-top: 220px;
+}
+.allbox3 .box10 i{
+    padding-top: 220px;
+    font-weight: bold;
+    padding: 10px 12px;
+    display: flex;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    padding-top: 250px;
+}
+
+.allbox3 .box10 i:hover{
+    background: rgb(255, 165, 47);
+    border: 2px solid black;
+    transition: 1s;
+}
+
+
+.allbox3 .box11{
+    height: 60vh;
+    width: 30%;
+    background-color: antiquewhite;
+    border-radius: 30px;
+}
+
+.contactus{
+    height: 110vh;
+    width: 100%;
+    background-color: rgb(218, 201, 176);
+    border-radius: 40px;
+    justify-items: center;
+    padding-top: 100px;
+}
+.contactus .container{
+    padding: 25px 25px;
+    height: 95vh;
+    width: 40vw;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container h2{
+    text-align: center;
+    padding-top: 15px;
+}
+.form .fname{
+    font-size: 17px;
+    color: #7a7676;
+}
+.form #fname{
+    margin-top: 5px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid #7a7676;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+}
+.form .inputfname{
+    padding-left: 10px;
+}
+.form .textbox{
+    height: 18vh;
+    width: 100%;
+    border: 1px solid #7a7676;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.botton .botton1{
+    height: 32px;
+    width: 40%;
+    display: flex;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.botton .botton2{
+    height: 32px;
+    width: 40%;
+    display: flex;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+}
+.botton .botton1:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    border: 2px solid aqua;
+}
+.botton .botton2:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    border: 2px solid aqua;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .navbutton a{
+        display: none;
+    }
+    .navbutton i{
+        padding: 30px;
+        float: left;
+        display: block;
+        font-weight: 300;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+    }
+    .profile-image{
+        height: 40vh;
+        width: 50%;
+        position: absolute;
+        top: 60%;
+        left: 25%;
+    }
+    .experience .allbox{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        padding: 20px 20px;
+    }
+    .allbox .box1{
+        height: 33vh;
+        width: 27vw;
+        background-color: #000000;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+    }
+    .allbox .box1 i{
+        color: white;
+        font-size: 40px;
+        padding-left: 35%;
+    
+    }
+    .allbox .box1 h3{
+        text-align: center;
+        color: white;
+    }
+    .allbox .box1 p{
+        text-align: center;
+        color: white;
+    }
+    .allbox .box1{
+        height: 33vh;
+        width: 27vw;
+        background-color: #000000;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+    }
+    .allbox .box1 i{
+        color: white;
+        font-size: 40px;
+        padding-left: 35%;
+    
+    }
+    .allbox .box1 h3{
+        text-align: center;
+        color: white;
+    }
+    .allbox .box1 p{
+        text-align: center;
+        color: white;
+    }
+    .allbox .box1{
+        margin-top: 20px;
+        height: 33vh;
+        width: 27vw;
+        background-color: #000000;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+    }
+    .allbox .box1 i{
+        color: white;
+        font-size: 40px;
+        padding-left: 35%;
+    
+    }
+    .allbox .box1 h3{
+        text-align: center;
+        color: white;
+    }
+    .allbox .box1 p{
+        text-align: center;
+        color: white;
+    }
+    .allbox .box1{
+        margin-top: 20px;
+        height: 33vh;
+        width: 27vw;
+        background-color: #000000;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+    }
+    .allbox .box1 i{
+        color: white;
+        font-size: 40px;
+        padding-left: 35%;
+    
+    }
+    .allbox .box1 h3{
+        text-align: center;
+        color: white;
+    }
+    .allbox .box1 p{
+        text-align: center;
+        color: white;
+    }
+    .allbox .box1{
+        margin-top: 20px;
+        height: 33vh;
+        width: 27vw;
+        background-color: #000000;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+    }
+    .allbox .box1 i{
+        color: white;
+        font-size: 40px;
+        padding-left: 35%;
+    
+    }
+    .allbox .box1 h3{
+        text-align: center;
+        color: white;
+    }
+    .allbox .box1 p{
+        text-align: center;
+        color: white;
+    }
+    .vedio{
+        margin-top: 20vh;
+        height: 120vh;
+        width: 100%;
+        background-color: #000000;
+        border-radius: 40px;
+    
+    }
+    .vedio .allbox2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-items: center;
+        
+    
+    }
+    .vedio .allbox2 .box6{
+        height: 34vh;
+        width: 37vw;
+        background-color: #000000;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    .vedio .allbox2 .box6 iframe{
+        height: 35vh;
+        width: 37vw;
+        border-radius: 20px;
+    }
+    
+    .vedio .box7{
+        height: 34vh;
+        width: 37vw;
+        background-color: #000000;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+    }
+    .vedio .allbox2 .box7 iframe{
+        height: 35vh;
+        width: 37vw;
+        border-radius: 20px;
+    }
+    .vedio .box8{
+        height: 34vh;
+        width: 37vw;
+        background-color: #000000;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+    }
+    .vedio .allbox2 .box8 video{
+        height: 35vh;
+        width: 37vw;
+        border-radius: 20px;
+    }
+    
+    .vedio .box9{
+        height: 34vh;
+        width: 37vw;
+        background-color: #000000;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+    }
+    .vedio .allbox2 .box9 iframe{
+        height: 35vh;
+        width: 37vw;
+        border-radius: 20px;
+    }
+    .contactus .container{
+        padding: 20px 20px;
+        height: 95vh;
+        width: 85vw;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .container h2{
+        text-align: center;
+        padding-top: 15px;
+    }
+    .form .fname{
+        font-size: 17px;
+        color: #7a7676;
+    }
+    .form #fname{
+        margin-top: 5px;
+        height: 30px;
+        width: 82.5vw;
+        border: 1px solid #7a7676;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .form .inputfname{
+        padding-left: 10px;
+    }
+    .form .textbox{
+        height: 18vh;
+        width: 100%;
+        border: 1px solid #7a7676;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .botton .botton1{
+        height: 32px;
+        width: 40%;
+        display: flex;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        font-weight: bold;
+        margin-left: 50px;
+    }
+    .botton .botton2{
+        height: 32px;
+        width: 40%;
+        display: flex;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        font-weight: bold;
+    }
+
+}
+
+
+.chatbot-toggler {
+    position: fixed;
+    bottom: 30px;
+    right: 35px;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #724ae8;
+    transition: all 0.2s ease;
+  }
+  body.show-chatbot .chatbot-toggler {
+    transform: rotate(90deg);
+  }
+  .chatbot-toggler span {
+    color: #fff;
+    position: absolute;
+  }
+  .chatbot-toggler span:last-child,
+  body.show-chatbot .chatbot-toggler span:first-child  {
+    opacity: 0;
+  }
+  body.show-chatbot .chatbot-toggler span:last-child {
+    opacity: 1;
+  }
+  .chatbot {
+    position: fixed;
+    right: 35px;
+    bottom: 90px;
+    width: 420px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.5);
+    transform-origin: bottom right;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    transition: all 0.1s ease;
+  }
+  body.show-chatbot .chatbot {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+  }
+  .chatbot header {
+    padding: 16px 0;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: #724ae8;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .chatbot header span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    display: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+  header h2 {
+    font-size: 1.4rem;
+  }
+  .chatbot .chatbox {
+    overflow-y: auto;
+    height: 450px;
+    padding: 30px 20px 100px;
+  }
+  .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+    width: 6px;
+  }
+  .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 25px;
+  }
+  .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+  }
+  .chatbox .chat {
+    display: flex;
+    list-style: none;
+  }
+  .chatbox .outgoing {
+    margin: 20px 0;
+    justify-content: flex-end;
+  }
+  .chatbox .incoming span {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    cursor: default;
+    text-align: center;
+    line-height: 32px;
+    align-self: flex-end;
+    background: #724ae8;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+  }
+  .chatbox .chat p {
+    white-space: pre-wrap;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    max-width: 75%;
+    color: #fff;
+    font-size: 0.95rem;
+    background: #724ae8;
+  }
+  .chatbox .incoming p {
+    border-radius: 10px 10px 10px 0;
+  }
+  .chatbox .chat p.error {
+    color: #721c24;
+    background: #f8d7da;
+  }
+  .chatbox .incoming p {
+    color: #000;
+    background: #f2f2f2;
+  }
+  .chatbot .chat-input {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 3px 20px;
+    border-top: 1px solid #ddd;
+  }
+  .chat-input textarea {
+    height: 55px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    max-height: 180px;
+    padding: 15px 15px 15px 0;
+    font-size: 0.95rem;
+  }
+  .chat-input span {
+    align-self: flex-end;
+    color: #724ae8;
+    cursor: pointer;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    font-size: 1.35rem;
+  }
+  .chat-input textarea:valid ~ span {
+    visibility: visible;
+  }
+  @media (max-width: 490px) {
+    .chatbot-toggler {
+      right: 20px;
+      bottom: 20px;
+    }
+    .chatbot {
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      border-radius: 0;
+      width: 100%;
+    }
+    .chatbot .chatbox {
+      height: 90%;
+      padding: 25px 15px 100px;
+    }
+    .chatbot .chat-input {
+      padding: 5px 15px;
+    }
+    .chatbot header span {
+      display: block;
+    }
+  }
