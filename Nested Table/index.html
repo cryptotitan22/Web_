@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables Variations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Nested Table</h1>
+
+    <h2>Nested Table Headers</h2>
+    <table border="1">
+        <tr class="header">
+            <th>Category</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td class="header1">Products</td>
+            <td>
+                <table border="1">
+                    <tr class="header">
+                        <th>Product Name</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>$1200</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>$25</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="header1">Services</td>
+            <td>
+                <table border="1">
+                    <tr class="header">
+                        <th>Service Name</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>Web Design</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Consulting</td>
+                        <td>$100/hr</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Nested Table Single Cell</h2>
+    <table border="1">
+        <tr>
+            <td class="header1">Main Cell 1</td>
+            <td>
+                Main Cell 2
+                <table border="1">
+                    <tr>
+                        <td>Nested Cell 1</td>
+                        <td>Nested Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Nested Cell 3</td>
+                        <td>Nested Cell 4</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Main Cell 3</td>
+        </tr>
+        <tr>
+            <td class="header1">Main Cell 4</td>
+            <td>Main Cell 5</td>
+            <td>Main Cell 6</td>
+        </tr>
+    </table>
+
+    <h2>Multiple Nested Tables One Cell</h2>
+    <table border="1">
+        <tr>
+            <td class="header1">Data</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>Table A - 1</td>
+                        <td>Table A - 2</td>
+                    </tr>
+                </table>
+                <br>
+                <table border="1">
+                    <tr>
+                        <td>Table B - 1</td>
+                        <td>Table B - 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Complex Nested Table with Spanning</h2>
+    <table border="1">
+        <tr>
+            <td rowspan="2" class="header1">Outer Data 1</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <th colspan="2">Inner Table Header</th>
+                    </tr>
+                    <tr>
+                        <td>Inner Data 1</td>
+                        <td>Inner Data 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Outer Data 2</td>
+        </tr>
+    </table>
+
+    <h2>Deep Nested Tables</h2>
+    <table border="1">
+        <tr>
+            <td class="header1">Level 1</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>Level 2</td>
+                        <td>
+                            <table border="1">
+                                <tr>
+                                    <td>Level 3</td>
+                                    <td>Data</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
