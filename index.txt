@@ -1,0 +1,5 @@
+<?php
+require_once 'controller/DonationController.php';
+$controller = new DonationController();
+$_SERVER['REQUEST_METHOD'] === 'POST' ? $controller->processDonation() : $controller->showForm();
+?>
