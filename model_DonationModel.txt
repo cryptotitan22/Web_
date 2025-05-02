@@ -1,0 +1,12 @@
+<?php
+class DonationModel {
+    private $pdo;
+    public function __construct() {
+        $this->pdo = new PDO('mysql:host=localhost;dbname=donations_db', 'username', 'password', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+    }
+    public function saveDonation($name, $email, $amount) {
+        $stmt = $this->pdo->prepare("INSERT INTO donations (name, email, amount, created_at) VALUES (?, ?, ?, NOW())");
+        return $stmt->execute([$name, $email, $amount]);
+    }
+}
+?>
