@@ -1,0 +1,23 @@
+<?php
+require_once 'model/DonationModel.php';
+class DonationController {
+    private $model;
+    public function __construct() {
+        $this->model = new DonationModel();
+    }
+    public function showForm() {
+        require 'view/donation_form.php';
+    }
+    public function processDonation() {
+        $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+        $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+        $amount = filter_input(INPUT_POST, 'amount', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+        $message = ($name && $email && $amount > 0) 
+            ? ($this->model->saveDonation($name, $email, $amount) 
+                ? "Thank you, $name! Your $$amount donation is received." 
+                : "Error processing donation.")
+            : "Invalid input.";
+        require 'view/donation_form.php';
+    }
+}
+?>
